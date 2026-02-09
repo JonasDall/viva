@@ -5,6 +5,260 @@
 	(uuid "84312fb1-9f98-4e67-94cf-324cfeff20d6")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Amplifier_Operational:TL072"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TL072"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "dual opamp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TL072_1_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TL072_2_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TL072_3_1"
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x05_Socket"
 			(pin_names
 				(offset 1.016)
@@ -3037,6 +3291,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 45.72 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5588393c-2b92-4fd1-8868-9c0383fd7eac")
+		(property "Reference" "U1"
+			(at 45.72 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL072"
+			(at 45.72 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:CERDIP-8_W7.62mm_SideBrazed_Socket"
+			(at 45.72 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 45.72 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"
+			(at 45.72 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "833e3a21-fac2-46ca-9eaf-aba77c2b78fe")
+		)
+		(pin "6"
+			(uuid "b8460a77-313e-4092-aa17-416a43d0488f")
+		)
+		(pin "7"
+			(uuid "11a61e6b-d9dd-43f9-bfd2-dfb445003b79")
+		)
+		(pin "8"
+			(uuid "898167cf-ebd5-4b14-92ae-de4421c94cb4")
+		)
+		(pin "1"
+			(uuid "536fc12e-8acc-43ae-8991-a42a2ee7114b")
+		)
+		(pin "3"
+			(uuid "7ed067c5-bb54-46a9-b944-ef1b9623c10a")
+		)
+		(pin "2"
+			(uuid "4310b604-a70f-49a2-a20a-4d70890fd990")
+		)
+		(pin "4"
+			(uuid "06bf0ab2-f1a9-4d7f-af0f-05d36704718a")
+		)
+		(instances
+			(project ""
+				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:2N3904")
 		(at 90.17 87.63 0)
 		(mirror y)
@@ -3472,6 +3812,92 @@
 				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
 					(reference "#GND01")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 90.17 44.45 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c4e62af-6de8-4e55-bf4c-b4bbbfed260f")
+		(property "Reference" "U1"
+			(at 90.17 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL072"
+			(at 90.17 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:CERDIP-8_W7.62mm_SideBrazed_Socket"
+			(at 90.17 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 90.17 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"
+			(at 90.17 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "64160e67-e252-482f-8c82-9713c9b49319")
+		)
+		(pin "6"
+			(uuid "7abc8c6d-87a3-41ca-b82a-9de4d1969cfb")
+		)
+		(pin "7"
+			(uuid "1a3ba510-261d-4d2e-b939-50bd7c666002")
+		)
+		(pin "8"
+			(uuid "898167cf-ebd5-4b14-92ae-de4421c94cb4")
+		)
+		(pin "1"
+			(uuid "441d39ab-d7b6-4d83-a398-5715c98dd7b5")
+		)
+		(pin "3"
+			(uuid "6c1eda5a-689c-4b40-adfb-5c7730de11e1")
+		)
+		(pin "2"
+			(uuid "e68861e3-16fc-4561-95d0-0d94daaf5bf9")
+		)
+		(pin "4"
+			(uuid "06bf0ab2-f1a9-4d7f-af0f-05d36704718a")
+		)
+		(instances
+			(project "viva"
+				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
+					(reference "U1")
+					(unit 3)
 				)
 			)
 		)
@@ -3920,6 +4346,92 @@
 				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
 					(reference "#GND03")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 69.85 44.45 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ded880c8-81ff-41a6-9de2-617c492309e4")
+		(property "Reference" "U2"
+			(at 69.85 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL072"
+			(at 69.85 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:CERDIP-8_W7.62mm_SideBrazed_Socket"
+			(at 69.85 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 69.85 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"
+			(at 69.85 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "833e3a21-fac2-46ca-9eaf-aba77c2b78fe")
+		)
+		(pin "6"
+			(uuid "b8460a77-313e-4092-aa17-416a43d0488f")
+		)
+		(pin "7"
+			(uuid "11a61e6b-d9dd-43f9-bfd2-dfb445003b79")
+		)
+		(pin "8"
+			(uuid "898167cf-ebd5-4b14-92ae-de4421c94cb4")
+		)
+		(pin "1"
+			(uuid "441d39ab-d7b6-4d83-a398-5715c98dd7b5")
+		)
+		(pin "3"
+			(uuid "6c1eda5a-689c-4b40-adfb-5c7730de11e1")
+		)
+		(pin "2"
+			(uuid "e68861e3-16fc-4561-95d0-0d94daaf5bf9")
+		)
+		(pin "4"
+			(uuid "06bf0ab2-f1a9-4d7f-af0f-05d36704718a")
+		)
+		(instances
+			(project "viva"
+				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
+					(reference "U2")
+					(unit 2)
 				)
 			)
 		)
