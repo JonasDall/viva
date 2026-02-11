@@ -5,3 +5,5 @@ Frequency range: 20Hz-500Hz
 Notch stop filter: 50Hz
 Required gain: 18 000
 
+Instrument gain: 100
+Filter gain: 180
