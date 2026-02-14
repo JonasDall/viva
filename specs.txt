@@ -1,9 +1,9 @@
 Rest minimum voltage: 20uV
 Contraction maximum voltage: 140uV
-Target maximum voltage: 2.5V
-Frequency range: 20Hz-500Hz
+Target maximum voltage: 1.5V
+Frequency range: 25Hz-500Hz
 Notch stop filter: 50Hz
-Required gain: 18 000
+Required gain: 7000
 
-Instrument gain: 100
-Filter gain: 180
+Instrument gain: 70
+Filter gain: 100
