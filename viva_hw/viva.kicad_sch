@@ -3934,7 +3934,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "47k"
 			(at 91.44 43.1799 0)
 			(effects
 				(font
@@ -4256,28 +4256,28 @@
 			)
 		)
 		(pin "7"
-			(uuid "0a5e5061-d1e5-48f6-8257-c4de0281d10c")
+			(uuid "0a5e5061-d1e5-48f6-8257-c4de0281d10d")
 		)
 		(pin "4"
-			(uuid "cf9e5db4-f263-4cec-ab51-56cdc9cfd8be")
+			(uuid "cf9e5db4-f263-4cec-ab51-56cdc9cfd8bf")
 		)
 		(pin "6"
-			(uuid "cdac1f03-32f0-40fb-9c8b-9c97ec5f80dd")
+			(uuid "cdac1f03-32f0-40fb-9c8b-9c97ec5f80de")
 		)
 		(pin "5"
-			(uuid "6a3a2b7b-d139-4302-b75f-bdf182f00a18")
+			(uuid "6a3a2b7b-d139-4302-b75f-bdf182f00a19")
 		)
 		(pin "1"
-			(uuid "9d561485-0ea5-4666-98ee-f7d4464970e9")
+			(uuid "9d561485-0ea5-4666-98ee-f7d4464970ea")
 		)
 		(pin "2"
-			(uuid "b34b3323-4d42-4586-bf0c-7505ed5e9a05")
+			(uuid "b34b3323-4d42-4586-bf0c-7505ed5e9a06")
 		)
 		(pin "3"
-			(uuid "0edb2db2-c6b5-4470-a79b-a321299a1404")
+			(uuid "0edb2db2-c6b5-4470-a79b-a321299a1405")
 		)
 		(pin "8"
-			(uuid "294c9ac9-a96e-47e3-89b3-32d884dc1b7b")
+			(uuid "294c9ac9-a96e-47e3-89b3-32d884dc1b7c")
 		)
 		(instances
 			(project ""
@@ -4476,28 +4476,28 @@
 			)
 		)
 		(pin "7"
-			(uuid "0a5e5061-d1e5-48f6-8257-c4de0281d10c")
+			(uuid "0a5e5061-d1e5-48f6-8257-c4de0281d10e")
 		)
 		(pin "4"
-			(uuid "cf9e5db4-f263-4cec-ab51-56cdc9cfd8be")
+			(uuid "cf9e5db4-f263-4cec-ab51-56cdc9cfd8c0")
 		)
 		(pin "6"
-			(uuid "cdac1f03-32f0-40fb-9c8b-9c97ec5f80dd")
+			(uuid "cdac1f03-32f0-40fb-9c8b-9c97ec5f80df")
 		)
 		(pin "5"
-			(uuid "6a3a2b7b-d139-4302-b75f-bdf182f00a18")
+			(uuid "6a3a2b7b-d139-4302-b75f-bdf182f00a1a")
 		)
 		(pin "1"
-			(uuid "9d561485-0ea5-4666-98ee-f7d4464970e9")
+			(uuid "9d561485-0ea5-4666-98ee-f7d4464970eb")
 		)
 		(pin "2"
-			(uuid "b34b3323-4d42-4586-bf0c-7505ed5e9a05")
+			(uuid "b34b3323-4d42-4586-bf0c-7505ed5e9a07")
 		)
 		(pin "3"
-			(uuid "0edb2db2-c6b5-4470-a79b-a321299a1404")
+			(uuid "0edb2db2-c6b5-4470-a79b-a321299a1406")
 		)
 		(pin "8"
-			(uuid "294c9ac9-a96e-47e3-89b3-32d884dc1b7b")
+			(uuid "294c9ac9-a96e-47e3-89b3-32d884dc1b7d")
 		)
 		(instances
 			(project ""
@@ -5246,7 +5246,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "147n"
 			(at 82.55 30.48 90)
 			(effects
 				(font
@@ -6767,7 +6767,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "30n"
 			(at 106.68 43.1799 0)
 			(effects
 				(font
