@@ -259,6 +259,171 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Conn_01x02_Socket"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Socket"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_Socket_1_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x03_Socket"
 			(pin_names
 				(offset 1.016)
@@ -1604,6 +1769,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Simulation_SPICE:0"
 			(power)
 			(pin_numbers
@@ -2588,6 +2860,24 @@
 		(uuid "5160578e-acc4-47bd-a8ae-6bdcacdbd8c2")
 	)
 	(junction
+		(at 233.68 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "589779b1-964f-4390-a34a-64f12143564b")
+	)
+	(junction
+		(at 223.52 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a76e609-cad4-4838-93f1-1b3284a60077")
+	)
+	(junction
+		(at 228.6 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "638f57db-373b-4935-b51f-6ba47bebbbf0")
+	)
+	(junction
 		(at 198.12 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2604,6 +2894,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8c6a2b40-264b-47ab-a5eb-c296655e750e")
+	)
+	(junction
+		(at 223.52 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9124cdea-186e-4baa-bb46-b4fa920b3f2f")
 	)
 	(junction
 		(at 191.77 132.08)
@@ -2676,6 +2972,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fb02889e-d5d8-4d77-8b45-604eee57a57d")
+	)
+	(no_connect
+		(at 223.52 95.25)
+		(uuid "41b30461-7521-4fe4-bf18-022c758ff22d")
+	)
+	(no_connect
+		(at 214.63 114.3)
+		(uuid "8876cfce-b284-49d1-9d35-40e3f2c63db5")
+	)
+	(no_connect
+		(at 212.09 114.3)
+		(uuid "ce749cd1-f521-4f7d-af37-24e77634319a")
 	)
 	(wire
 		(pts
@@ -2799,16 +3107,6 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 114.3) (xy 214.63 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "106ceeb3-e8d1-407f-b9e3-87128cc6d514")
-	)
-	(wire
-		(pts
 			(xy 173.99 107.95) (xy 203.2 107.95)
 		)
 		(stroke
@@ -2826,6 +3124,16 @@
 			(type default)
 		)
 		(uuid "12bd0db7-dd78-4cb8-b668-9af6441e9765")
+	)
+	(wire
+		(pts
+			(xy 223.52 132.08) (xy 223.52 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1319d078-cd65-41be-8b71-12e210ac9c39")
 	)
 	(wire
 		(pts
@@ -2939,7 +3247,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 132.08) (xy 212.09 132.08)
+			(xy 207.01 132.08) (xy 223.52 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3016,6 +3324,16 @@
 			(type default)
 		)
 		(uuid "4290b22a-7e4b-48e6-b585-b9abec844fec")
+	)
+	(wire
+		(pts
+			(xy 223.52 137.16) (xy 223.52 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "442c8798-a6d3-41b6-bb83-109b6619c162")
 	)
 	(wire
 		(pts
@@ -3119,7 +3437,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 142.24) (xy 214.63 142.24)
+			(xy 207.01 142.24) (xy 223.52 142.24)
 		)
 		(stroke
 			(width 0)
@@ -3199,6 +3517,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 157.48) (xy 233.68 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58412b10-f9c1-40de-89f2-650f76d6f2ac")
+	)
+	(wire
+		(pts
 			(xy 34.29 38.1) (xy 34.29 40.64)
 		)
 		(stroke
@@ -3226,6 +3554,16 @@
 			(type default)
 		)
 		(uuid "5c63773b-a3b8-4e6b-b36b-5bd3fc662c36")
+	)
+	(wire
+		(pts
+			(xy 223.52 157.48) (xy 228.6 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ebb433d-8dac-4772-a1fb-84ff3a2cd854")
 	)
 	(wire
 		(pts
@@ -3349,6 +3687,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 157.48) (xy 238.76 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b2389e6-2f7f-4760-b0f8-3bb957bd6533")
+	)
+	(wire
+		(pts
 			(xy 110.49 35.56) (xy 110.49 38.1)
 		)
 		(stroke
@@ -3376,6 +3724,16 @@
 			(type default)
 		)
 		(uuid "7d694649-b98c-44d4-b65a-55e2024fbd3f")
+	)
+	(wire
+		(pts
+			(xy 223.52 142.24) (xy 223.52 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f699c06-57b5-49bf-a7d2-df6bb13f6129")
 	)
 	(wire
 		(pts
@@ -3486,6 +3844,16 @@
 			(type default)
 		)
 		(uuid "895a7581-8573-4b61-a55f-65ba0f952aac")
+	)
+	(wire
+		(pts
+			(xy 223.52 157.48) (xy 223.52 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bafc985-37ee-4c7f-9fa8-fb202bc0b006")
 	)
 	(wire
 		(pts
@@ -3676,16 +4044,6 @@
 			(type default)
 		)
 		(uuid "aa2958ac-0297-4663-a8fb-7ad7ac68b33c")
-	)
-	(wire
-		(pts
-			(xy 212.09 114.3) (xy 212.09 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab71d31a-7bf2-484f-8188-4caa8c232d4b")
 	)
 	(wire
 		(pts
@@ -4186,6 +4544,71 @@
 		)
 	)
 	(symbol
+		(lib_id "Simulation_SPICE:0")
+		(at 223.52 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "042c0980-5230-45cb-bdbf-fe879da44edc")
+		(property "Reference" "#GND014"
+			(at 223.52 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0"
+			(at 224.79 158.496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Circuit_elements__device"
+			(at 223.52 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0V reference potential for simulation"
+			(at 223.52 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "16d39078-17d4-4f81-8c7f-38b58d70566f")
+		)
+		(instances
+			(project "viva"
+				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
+					(reference "#GND014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 135.89 39.37 180)
 		(unit 1)
@@ -4403,6 +4826,76 @@
 				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
 					(reference "U1")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 228.6 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e8c5ef6-deab-4942-845f-a16a290575ed")
+		(property "Reference" "J3"
+			(at 229.87 134.6199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Battery"
+			(at 229.87 137.1599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 228.6 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 228.6 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b6d76ec-c85b-46ef-9b2b-80b3538ec076")
+		)
+		(pin "2"
+			(uuid "95608927-899b-4f4c-9bc7-734b1397418f")
+		)
+		(instances
+			(project ""
+				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
+					(reference "J3")
+					(unit 1)
 				)
 			)
 		)
@@ -4940,7 +5433,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
 			(at 102.87 38.1 0)
 			(effects
 				(font
@@ -5285,7 +5778,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x05_Socket"
+		(property "Value" "Motor"
 			(at 100.965 106.68 0)
 			(effects
 				(font
@@ -5668,7 +6161,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x03_Socket"
+		(property "Value" "EMG"
 			(at 23.495 33.02 0)
 			(effects
 				(font
@@ -5676,7 +6169,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 22.86 38.1 0)
 			(effects
 				(font
@@ -5853,6 +6346,73 @@
 			(project "viva"
 				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 223.52 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e9b37da-a2c2-4cc6-b5fd-48f4ed225e05")
+		(property "Reference" "H4"
+			(at 226.06 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 226.06 154.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad"
+			(at 223.52 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 223.52 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "85cac040-9995-4c42-97f1-6fc5adaaab9d")
+		)
+		(instances
+			(project "viva"
+				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -6118,6 +6678,205 @@
 			(project ""
 				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
 					(reference "#GND01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 238.76 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a5f54be-49f5-4613-860d-ec62a17e6c26")
+		(property "Reference" "H3"
+			(at 241.3 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 241.3 154.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad"
+			(at 238.76 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 238.76 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b6cf330c-6441-4a90-8f4e-6da1b5ca16b9")
+		)
+		(instances
+			(project "viva"
+				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 233.68 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f7ac1d4-686e-4d3e-8a34-3d907caf97c6")
+		(property "Reference" "H2"
+			(at 236.22 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 236.22 154.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad"
+			(at 233.68 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 233.68 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9a5be3ee-7c7d-43b6-94d2-14e28effdcff")
+		)
+		(instances
+			(project "viva"
+				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:0")
+		(at 223.52 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8ff16034-d269-4e6c-b1dc-759bab67bd48")
+		(property "Reference" "#GND013"
+			(at 223.52 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0"
+			(at 224.79 143.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Circuit_elements__device"
+			(at 223.52 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0V reference potential for simulation"
+			(at 223.52 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c7cc1f3-c1b8-44c5-a223-bd24e7d21ecf")
+		)
+		(instances
+			(project "viva"
+				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
+					(reference "#GND013")
 					(unit 1)
 				)
 			)
@@ -6603,7 +7362,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
 			(at 224.79 85.09 0)
 			(effects
 				(font
@@ -6631,28 +7390,28 @@
 			)
 		)
 		(pin "3"
-			(uuid "ac9e32bb-5ac8-4021-9618-6b62c4d9e218")
+			(uuid "ac9e32bb-5ac8-4021-9618-6b62c4d9e219")
 		)
 		(pin "7"
-			(uuid "8a5bcde7-3064-4fd1-aea8-8ae8262851ea")
+			(uuid "8a5bcde7-3064-4fd1-aea8-8ae8262851eb")
 		)
 		(pin "8"
-			(uuid "b035a1d5-fb4d-4278-b7c3-d05ab7c48927")
+			(uuid "b035a1d5-fb4d-4278-b7c3-d05ab7c48928")
 		)
 		(pin "6"
-			(uuid "d232d93c-4135-4061-a68c-cc39f7591448")
+			(uuid "d232d93c-4135-4061-a68c-cc39f7591449")
 		)
 		(pin "5"
-			(uuid "807cb850-ca2f-430f-9ada-ab4ab83447a4")
+			(uuid "807cb850-ca2f-430f-9ada-ab4ab83447a5")
 		)
 		(pin "2"
-			(uuid "dd42d82c-8c9d-4b48-9daa-15f7563da419")
+			(uuid "dd42d82c-8c9d-4b48-9daa-15f7563da41a")
 		)
 		(pin "1"
-			(uuid "5698720e-d04b-455a-93be-15f4318407b7")
+			(uuid "5698720e-d04b-455a-93be-15f4318407b8")
 		)
 		(pin "4"
-			(uuid "e530b0aa-79e7-42c5-aedb-cbbd2bc8672d")
+			(uuid "e530b0aa-79e7-42c5-aedb-cbbd2bc8672e")
 		)
 		(instances
 			(project ""
@@ -7201,6 +7960,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 228.6 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e445939d-4058-448d-a5ea-4022b5dbba04")
+		(property "Reference" "H1"
+			(at 231.14 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 231.14 154.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad"
+			(at 228.6 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 228.6 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c6677a2c-aa5f-45e1-a844-772f3a5b2692")
+		)
+		(instances
+			(project "viva"
+				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4007")
 		(at 129.54 123.19 270)
 		(unit 1)
@@ -7314,7 +8140,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
 			(at 154.94 38.1 0)
 			(effects
 				(font
@@ -7342,28 +8168,28 @@
 			)
 		)
 		(pin "3"
-			(uuid "ac9e32bb-5ac8-4021-9618-6b62c4d9e218")
+			(uuid "ac9e32bb-5ac8-4021-9618-6b62c4d9e21a")
 		)
 		(pin "7"
-			(uuid "8a5bcde7-3064-4fd1-aea8-8ae8262851ea")
+			(uuid "8a5bcde7-3064-4fd1-aea8-8ae8262851ec")
 		)
 		(pin "8"
-			(uuid "b035a1d5-fb4d-4278-b7c3-d05ab7c48927")
+			(uuid "b035a1d5-fb4d-4278-b7c3-d05ab7c48929")
 		)
 		(pin "6"
-			(uuid "d232d93c-4135-4061-a68c-cc39f7591448")
+			(uuid "d232d93c-4135-4061-a68c-cc39f759144a")
 		)
 		(pin "5"
-			(uuid "807cb850-ca2f-430f-9ada-ab4ab83447a4")
+			(uuid "807cb850-ca2f-430f-9ada-ab4ab83447a6")
 		)
 		(pin "2"
-			(uuid "dd42d82c-8c9d-4b48-9daa-15f7563da419")
+			(uuid "dd42d82c-8c9d-4b48-9daa-15f7563da41b")
 		)
 		(pin "1"
-			(uuid "5698720e-d04b-455a-93be-15f4318407b7")
+			(uuid "5698720e-d04b-455a-93be-15f4318407b9")
 		)
 		(pin "4"
-			(uuid "e530b0aa-79e7-42c5-aedb-cbbd2bc8672d")
+			(uuid "e530b0aa-79e7-42c5-aedb-cbbd2bc8672f")
 		)
 		(instances
 			(project ""
@@ -7538,7 +8364,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f85d5d94-18ac-41bf-8873-9169af22254f")
-		(property "Reference" "ST7735"
+		(property "Reference" "J4"
 			(at 263.652 86.36 0)
 			(effects
 				(font
@@ -7547,7 +8373,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x08_Socket"
+		(property "Value" "ST7735"
 			(at 258.318 88.138 0)
 			(effects
 				(font
@@ -7610,7 +8436,7 @@
 		(instances
 			(project ""
 				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
-					(reference "ST7735")
+					(reference "J4")
 					(unit 1)
 				)
 			)
