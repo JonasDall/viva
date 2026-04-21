@@ -1,4 +1,11 @@
-27251871117354355
+27359982213153405
+Additional_Connectors
+Barrel_Plug_5.5mmx2.1mm
+
+
+0
+2
+2
 Additional_Connectors
 DEANS
 
@@ -6,6 +13,27 @@ DEANS
 0
 2
 2
+Additional_Switches
+3PDT
+
+
+0
+9
+9
+Additional_Switches
+Lug_Pot
+
+
+0
+3
+3
+Additional_Switches
+SPDT
+
+
+0
+3
+3
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
