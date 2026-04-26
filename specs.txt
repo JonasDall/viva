@@ -1,9 +1,13 @@
-Rest minimum voltage: 20uV
 Contraction maximum voltage: 140uV
 Target maximum voltage: 1.5V
-Frequency range: 25Hz-500Hz
-Notch stop filter: 50Hz
-Required gain: 7000
+Muscle frequency range: 25Hz-500Hz
+Amplification: 1k
 
-Instrument gain: 70
-Filter gain: 100
+Stage 1 amplification: 10
+
+Stage 2 amplification: 10
+
+Highpass: R=47k, C=100n, 33Hz
+Lowpass: R=10k, C=100n, 159Hz
+
+

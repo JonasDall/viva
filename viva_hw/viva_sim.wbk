@@ -4,7 +4,7 @@
     {
       "analysis": "AC",
       "commands": [
-        ".ac dec 101 1 100k",
+        ".ac dec 101 1 10k",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
@@ -21,23 +21,23 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(228, 26, 28)",
-          "signal": "V(/OUT) (gain)",
-          "trace_type": 521
-        },
-        {
           "color": "rgb(55, 126, 184)",
-          "signal": "V(/STAGE_1) (gain)",
+          "signal": "V(/FILTER_1) (gain)",
           "trace_type": 521
         },
         {
           "color": "rgb(77, 175, 74)",
-          "signal": "V(/STAGE_2) (gain)",
+          "signal": "V(/FILTER_2) (gain)",
+          "trace_type": 521
+        },
+        {
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(/GAIN_1) (gain)",
           "trace_type": 521
         },
         {
           "color": "rgb(152, 78, 163)",
-          "signal": "V(/STAGE_3) (gain)",
+          "signal": "V(/GAIN_2) (gain)",
           "trace_type": 521
         }
       ]
