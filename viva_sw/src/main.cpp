@@ -1,79 +1,41 @@
 #include <Arduino.h>
+#include <Wire.h>
 #include <Adafruit_GFX.h>
-#include <Adafruit_ST7735.h>
-#include <SPI.h>
+#include <Adafruit_SSD1306.h>
 
-// Definitions
-#define TFT_DC D8
-#define TFT_CS D7
-#define TFT_RST D2
-#define TFT_MOSI D9
-#define TFT_SCLK D10
+#define SCREEN_WIDTH 128
+#define SCREEN_HEIGHT 64
+#define OLED_RESET -1
 
-Adafruit_ST7735 tft = Adafruit_ST7735 (TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
-
-// const int frequency = 20000;
-// const int resolution = 8;
-// const int range = pow(2, 8);
-
-// // Data structures
-// struct pos{
-//   float x, y, z;
-// };
-
-// // Functions
-// float distance (pos pos1, pos pos2){
-//   return sqrt(pow(pos2.x - pos1.x, 2) + pow(pos2.y - pos1.y, 2) + pow(pos2.z - pos1.z, 2));
-// }
-
-// float linear (float distance, float size){
-//   return 1 - distance/size;
-// }
-
-// // Object definitions
-// const pos motors[4] = {{1.0, 1.0 ,0.0}, {1.0, -1.0 ,0.0}, {-1.0, 1.0 ,0.0}, {-1.0, -1.0 ,0.0}};
-// const int pin[4] = {5, 6, 7, 21};
-
-// pos actuator = {0.0, 0.0, 0.0};
-// float size = 1.0;
-
+Adafruit_SSD1306 display(
+    SCREEN_WIDTH,
+    SCREEN_HEIGHT,
+    &Wire,
+    OLED_RESET
+);
 
 void setup() {
-  Serial.begin(115200);
-  while (!Serial){
-    delay(10);
-  }
-  Serial.print(F("Hello"));
+    Serial.begin(115200);
 
-  // for (int i=0; i<4; ++i){
-  //   ledcSetup(i, frequency, resolution);
-  //   ledcAttachPin(pin[i], i);
-  // }
-  // pinMode(A0, INPUT); // ADC
+    // --- Initialize I2C for XIAO ESP32C3 ---
+    Wire.begin(6, 7);   // SDA=D4(GPIO6), SCL=D5(GPIO7)
 
-  tft.initR(INITR_MINI160x80_PLUGIN);
-  tft.fillScreen(ST7735_MADCTL_BGR);
-  tft.fillCircle(10, 10, 5, ST7735_CYAN);
+    // --- Initialize OLED ---
+    if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
+        Serial.println("SSD1306 allocation failed");
+        while(true);
+    }
+
+    display.clearDisplay();
+
+    display.setTextSize(1);
+    display.setTextColor(SSD1306_WHITE);
+    display.setCursor(0, 0);
+
+    display.println("Hello, world!");
+
+    display.display();   // push buffer to screen
 }
 
 void loop() {
-  Serial.print(F("Hello Loop"));
-  delay(1000);
-  // battery stuff
-  // uint32_t Vbatt = 0;
-  // for(int i = 0; i < 16; i++) {
-  //   Vbatt = Vbatt + analogReadMilliVolts(A0); // ADC with correction   
-  // }
-  // float Vbattf = 2 * Vbatt / 16 / 1000.0;
-  // if (Vbattf <= 3.0){
-  //   esp_deep_sleep_start();
-  // }
-
-
-  // // ledcWrite(channel, (range * sin(2 * PI * 5 * millis() / 1000)) / 2 + range/2);
-  // for (int i=0; i<4; ++i){
-  //   if (distance(actuator, motors[i]) < size){
-  //     ledcWrite(i, range * linear(distance(actuator, motors[i]), size));
-  //   }
-  // }
 }
