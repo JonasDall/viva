@@ -18,6 +18,8 @@ const int motors[] = {D7, D8, D9, D10};   // GPIO8, GPIO9, GPIO10, GPIO11
 const int buttons[] = {D2, D3};             // GPIO0, GPIO1, GPIO2, GPIO3
 int current_motor = 0;
 
+const int battery = A0;  // GPIO4
+
 void update_motor(int motor_index){
     for (int i = 0; i < 4; i++) {
         if (i == motor_index) {
@@ -45,6 +47,8 @@ void setup() {
     pinMode(motors[2], OUTPUT);
     pinMode(motors[3], OUTPUT);
 
+    pinMode(battery, INPUT);
+
     for (int i = 0; i < 4; i++) {
         digitalWrite(motors[i], LOW);  // Ensure motors are off at startup
     }
@@ -64,6 +68,14 @@ void setup() {
 }
 
 void loop() {
+
+    uint32_t Vbatt = 0;
+    for(int i = 0; i < 16; i++) {
+      Vbatt = Vbatt + analogReadMilliVolts(A0); // ADC with correction   
+    }
+
+    float Vbattf = 2 * Vbatt / 16 / 1000.0;     // attenuation ratio 1/2, mV --> V
+
     if (digitalRead(buttons[0]) == LOW) {
         current_motor = (current_motor + 1) % 4;  // Cycle through motors
         update_motor(current_motor);
@@ -80,6 +92,11 @@ void loop() {
     display.setCursor(0, 0);
     display.print("Current Motor: ");
     display.println(current_motor + 1);  // Display motor number (1-4)
+
+    display.setCursor(0, 10);
+    display.print("Battery: ");
+    display.print(Vbattf, 2);  // Display voltage with 2 decimal places
+    display.println(" V");
     display.display();
 }
 
