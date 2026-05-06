@@ -3059,7 +3059,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 95.25) (xy 149.86 95.25)
+			(xy 113.03 95.25) (xy 128.27 95.25)
 		)
 		(stroke
 			(width 0)
@@ -3269,6 +3269,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 92.71) (xy 149.86 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80d0e2d4-1a93-4a6e-b673-8028e5127078")
+	)
+	(wire
+		(pts
 			(xy 227.33 97.79) (xy 231.14 97.79)
 		)
 		(stroke
@@ -3449,7 +3459,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 92.71) (xy 149.86 92.71)
+			(xy 113.03 92.71) (xy 123.19 92.71)
 		)
 		(stroke
 			(width 0)
@@ -3639,7 +3649,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 97.79) (xy 146.05 97.79)
+			(xy 113.03 97.79) (xy 133.35 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3669,6 +3679,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 90.17) (xy 135.89 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e08ead48-28ea-48a4-ad69-4a10aafcbc28")
+	)
+	(wire
+		(pts
 			(xy 181.61 100.33) (xy 181.61 97.79)
 		)
 		(stroke
@@ -3689,7 +3709,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 90.17) (xy 135.89 90.17)
+			(xy 113.03 90.17) (xy 118.11 90.17)
 		)
 		(stroke
 			(width 0)
@@ -3749,6 +3769,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 97.79) (xy 146.05 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f14c205e-0ee5-4c7a-8d94-b4d5078cf9c2")
+	)
+	(wire
+		(pts
 			(xy 146.05 128.27) (xy 149.86 128.27)
 		)
 		(stroke
@@ -3776,6 +3806,16 @@
 			(type default)
 		)
 		(uuid "f83b21b4-e8ce-4959-97dc-31712cfde622")
+	)
+	(wire
+		(pts
+			(xy 135.89 95.25) (xy 149.86 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa84ce0d-4d36-4dd7-bb2a-1b2ff045de23")
 	)
 	(wire
 		(pts
@@ -4569,6 +4609,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 137.16 97.79 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56048a74-f780-45f1-8688-cb4893b1b5ed")
+		(property "Reference" "R6"
+			(at 137.16 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 137.16 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 137.16 99.568 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 137.16 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72ece72f-92da-4280-8ac3-3f2425fb0016")
+		)
+		(pin "2"
+			(uuid "d0faf1cf-5868-434c-916d-0be7855e2acc")
+		)
+		(instances
+			(project "viva"
+				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x05_Socket")
 		(at 236.22 102.87 0)
 		(unit 1)
@@ -4640,6 +4748,74 @@
 			(project "viva"
 				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 121.92 90.17 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6cbfb304-f4a8-4a83-b45a-ae5142471cd5")
+		(property "Reference" "R1"
+			(at 121.92 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 121.92 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 121.92 91.948 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 121.92 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e87b092-7ee7-4bd1-8670-2fe4048697e6")
+		)
+		(pin "2"
+			(uuid "efeced96-f4b7-4dec-a480-62ce57ef4e98")
+		)
+		(instances
+			(project "viva"
+				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -4763,7 +4939,7 @@
 				)
 			)
 		)
-		(property "Value" "220k"
+		(property "Value" "5.6k"
 			(at 86.36 140.97 90)
 			(effects
 				(font
@@ -5331,7 +5507,7 @@
 				)
 			)
 		)
-		(property "Value" "220k"
+		(property "Value" "5.6k"
 			(at 86.36 130.81 90)
 			(effects
 				(font
@@ -5568,22 +5744,22 @@
 			)
 		)
 		(pin "2"
-			(uuid "a05b5d3c-27cb-4efa-9139-9e11e5afddfc")
+			(uuid "a05b5d3c-27cb-4efa-9139-9e11e5afddfd")
 		)
 		(pin "3"
-			(uuid "96bbf07b-e0a8-46a2-9435-aad443a6a696")
+			(uuid "96bbf07b-e0a8-46a2-9435-aad443a6a697")
 		)
 		(pin "4"
-			(uuid "ee5aaafb-bf24-4789-bf24-fb48f93dce89")
+			(uuid "ee5aaafb-bf24-4789-bf24-fb48f93dce8a")
 		)
 		(pin "6"
-			(uuid "c6379a31-701b-4063-93fb-30bf44a13911")
+			(uuid "c6379a31-701b-4063-93fb-30bf44a13912")
 		)
 		(pin "1"
-			(uuid "4a3b4d48-99e6-4eae-ab07-731db094b01f")
+			(uuid "4a3b4d48-99e6-4eae-ab07-731db094b020")
 		)
 		(pin "5"
-			(uuid "96588ff9-bfc6-4cc2-850d-322e88dacbb4")
+			(uuid "96588ff9-bfc6-4cc2-850d-322e88dacbb5")
 		)
 		(instances
 			(project "viva"
@@ -6388,6 +6564,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 127 92.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca9a85f8-3069-4005-9eeb-4f5da90c7687")
+		(property "Reference" "R2"
+			(at 127 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 127 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 127 94.488 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 127 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1081c9f9-d8fb-4e54-9b92-28fcb00b5df1")
+		)
+		(pin "2"
+			(uuid "0ce4736c-df05-42c4-a936-dbd12a26d246")
+		)
+		(instances
+			(project "viva"
+				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Simulation_SPICE:0")
 		(at 157.48 87.63 0)
 		(mirror x)
@@ -7099,6 +7343,74 @@
 			(project "viva"
 				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 132.08 95.25 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f54ec6a4-41a6-48e3-bba6-7309d88dceea")
+		(property "Reference" "R5"
+			(at 132.08 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 132.08 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 132.08 97.028 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.08 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 132.08 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8918ddbf-ac02-460b-9af2-6b50230bebb0")
+		)
+		(pin "2"
+			(uuid "5bcd4bdc-873b-4d0a-a9a6-7a4882c78896")
+		)
+		(instances
+			(project "viva"
+				(path "/84312fb1-9f98-4e67-94cf-324cfeff20d6"
+					(reference "R5")
 					(unit 1)
 				)
 			)
