@@ -501,7 +501,7 @@
                 ""
             ],
             "cStandard": "gnu99",
-            "cppStandard": "gnu++11",
+            "cppStandard": "gnu++17",
             "compilerPath": "/home/jonas/.platformio/packages/toolchain-riscv32-esp/bin/riscv32-esp-elf-gcc",
             "compilerArgs": [
                 "-march=rv32imc",

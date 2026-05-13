@@ -2,6 +2,7 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
+#include "patterns.hpp"
 
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
@@ -20,15 +21,23 @@ int current_motor = 0;
 
 const int battery = A0;  // GPIO4
 
-void update_motor(int motor_index){
-    for (int i = 0; i < 4; i++) {
-        if (i == motor_index) {
-            digitalWrite(motors[i], HIGH);
-        } else {
-            digitalWrite(motors[i], LOW);
-        }
-    }
-}
+float button_hold_threshold = 1.0; // seconds
+
+enum State {
+    STARTUP,
+    MENU,
+    RUN
+};
+
+State current_state = STARTUP;
+float total_time = 10.0;
+float current_time = 0.0;
+float pattern_start_time = 0.0;
+
+float button_0_hold_time = 0.0;
+bool button_0_holding = false;
+float button_1_hold_time = 0.0;
+bool button_1_holding = false;
 
 void setup() {
     Serial.begin(115200);
@@ -62,13 +71,17 @@ void setup() {
     display.setTextColor(SSD1306_WHITE);
     display.setCursor(0, 0);
 
-    display.println("Hello, world!");
+    display.println("Starting...");
 
     display.display();   // push buffer to screen
 }
 
 void loop() {
+    // --- Calculate deltatime ---
+    float deltatime = millis() / 1000.0 - current_time;
+    current_time += deltatime;
 
+    // --- Read battery voltage ---
     uint32_t Vbatt = 0;
     for(int i = 0; i < 16; i++) {
       Vbatt = Vbatt + analogReadMilliVolts(A0); // ADC with correction   
@@ -76,27 +89,78 @@ void loop() {
 
     float Vbattf = 2 * Vbatt / 16 / 1000.0;     // attenuation ratio 1/2, mV --> V
 
-    if (digitalRead(buttons[0]) == LOW) {
-        current_motor = (current_motor + 1) % 4;  // Cycle through motors
-        update_motor(current_motor);
-        delay(200);  // Debounce delay
+    // --- Read buttons ---
+    //bool button_0_pressed
+
+    if (buttons[0] == LOW) {
+        if (!button_0_holding) {
+            button_0_holding = true;
+            button_0_hold_time = 0.0;
+        } else {
+            button_0_hold_time += deltatime;
+        }
+    } else {
+        button_0_holding = false;
+        button_0_hold_time = 0.0;
     }
 
-    if (digitalRead(buttons[1]) == LOW) {
-        current_motor = (current_motor - 1 + 4) % 4;  // Cycle backwards through motors
-        update_motor(current_motor);
-        delay(200);  // Debounce delay
+    if (buttons[1] == LOW) {
+        if (!button_1_holding) {
+            button_1_holding = true;
+            button_1_hold_time = 0.0;
+        } else {
+            button_1_hold_time += deltatime;
+        }
+    } else {
+        button_1_holding = false;
+        button_1_hold_time = 0.0;
     }
 
+    if (button_0_hold_time > button_hold_threshold) {
+        button_0_hold_time = 0.0;
+        Serial.println("Button 0 held");
+    }
+
+    // --- Display battery voltage ---
     display.clearDisplay();
     display.setCursor(0, 0);
-    display.print("Current Motor: ");
-    display.println(current_motor + 1);  // Display motor number (1-4)
-
-    display.setCursor(0, 10);
     display.print("Battery: ");
     display.print(Vbattf, 2);  // Display voltage with 2 decimal places
     display.println(" V");
+
+    switch (current_state)
+    {
+    case STARTUP:
+        current_state = MENU;
+        break;
+
+    case MENU:
+        display.setCursor(0, 20);
+        display.print("Set time: ");
+        display.print(total_time, 1);
+        display.print(" min");
+
+        if (button_0_pressed) {
+            total_time += 10.0;
+        }
+        if (button_1_pressed) {
+            total_time -= 10.0;
+            if (total_time < 10.0)
+            {
+                total_time = 10.0;
+            }
+        }
+        break;
+
+    case RUN:
+        /* code */
+        break;
+
+    default:
+        current_state = STARTUP;
+        break;
+    }
+
     display.display();
 }
 
