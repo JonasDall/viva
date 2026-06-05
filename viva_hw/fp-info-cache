@@ -1,4 +1,4 @@
-27430627331204526
+27432408016230397
 Additional_Connectors
 Barrel_Plug_5.5mmx2.1mm
 
@@ -100834,6 +100834,13 @@ Logo WEEE
 0
 0
 0
+System_On_Chip
+ESP32C3_SUPER_MINI_THR
+ESP32C3 Seeed Xiao RF Wifi Shield (https://www.seeedstudio.com/blog/wp-content/uploads/2022/08/Seeed-Studio-XIAO-Series-Package-and-PCB-Design.pdf)
+wifi bluetooth microcontroller
+0
+16
+16
 System_On_Chip
 XIAO_ESP32C3_SMD
 ESP32C3 Seeed Xiao RF Wifi Shield (https://www.seeedstudio.com/blog/wp-content/uploads/2022/08/Seeed-Studio-XIAO-Series-Package-and-PCB-Design.pdf)
